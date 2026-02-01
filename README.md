@@ -72,6 +72,8 @@ CloudWatch monitoring & debugging
 
 Real-time validation using file metadata
 
+Dev-https://dev.to/irfanpasha/aws-lambda-s3-file-upload-logger-using-python-31n4
+
 🧑‍💻 Author
 
 Irfan Pasha
