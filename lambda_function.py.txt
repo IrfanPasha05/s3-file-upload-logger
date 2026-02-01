@@ -1,0 +1,18 @@
+import json
+
+def lambda_handler(event, context):
+    record = event['Records'][0]
+    
+    bucket_name = record['s3']['bucket']['name']
+    file_name = record['s3']['object']['key']
+    file_size = record['s3']['object']['size']
+    
+    print("New file uploaded to S3")
+    print(f"Bucket Name: {bucket_name}")
+    print(f"File Name: {file_name}")
+    print(f"File Size: {file_size} bytes")
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps('S3 file upload logged successfully')
+    }
